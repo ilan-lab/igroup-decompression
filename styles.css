@@ -130,6 +130,22 @@ input[type="tel"] { direction: rtl; text-align: right; }
 }
 .steps p { color: var(--muted); font-size: .98rem; }
 
+/* Videos */
+.video-block { margin-top: 2.5rem; text-align: center; }
+.video-sec .video-block { margin-top: 0; }
+.video-block h3 { font-size: clamp(1.2rem, 3.5vw, 1.5rem); font-weight: 800; color: var(--navy); margin-bottom: 1rem; }
+.vid {
+  display: block; width: 100%; max-width: 360px; aspect-ratio: 9 / 16; margin: 0 auto;
+  border-radius: var(--radius); background: #000; object-fit: cover;
+  box-shadow: 0 10px 30px rgba(15,42,71,.18);
+}
+.testimonials { border-top: 1px solid var(--line); padding-top: 3rem; }
+.testimonials .section-head { text-align: center; }
+.t-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 360px)); gap: 1.5rem; justify-content: center; }
+.t-card { background: #fff; border: 1px solid var(--line); border-top: 4px solid var(--orange); border-radius: var(--radius); padding: .75rem; text-align: center; box-shadow: 0 10px 30px rgba(15,42,71,.08); }
+.t-card .vid { box-shadow: none; }
+.t-name { font-weight: 800; color: var(--navy); margin-top: .6rem; font-size: 1.1rem; }
+
 /* Compare table */
 .table-wrap { overflow-x: auto; border-radius: var(--radius); border: 1px solid var(--line); background: #fff; }
 table { width: 100%; border-collapse: collapse; min-width: 560px; }
